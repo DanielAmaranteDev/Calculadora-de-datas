@@ -4,7 +4,7 @@ Script em Python que calcula datas futuras ou passadas a partir de hoje criado p
 
 ## O problema
 
-No cartório, boa parte dos processos tem prazos contados em dias corridos a partir de uma data de entrada (por exemplo, um prazo de 30 dias). Calcular manualmente a data exata em que o prazo vence é fácil de errar e toma tempo. Este script resolve isso: basta informar quantos dias somar ou subtrair, e ele retorna a data exata. Uma resolução simples para um problema simples.
+No cartório onde trabalhei, grande parte dos processos possui prazos contados em dias corridos a partir da data do protocolo. Para calcular esses prazos, precisávamos fazer a contagem manualmente, consultando o calendário. Além de consumir tempo, esse método estava sujeito a erros. Esse script resolveu esse problema de forma simples: basta informar a quantidade de dias que deseja adicionar ou subtrair e ele retorna a data exata. Uma solução simples para um problema simples.
 
 ## Como funciona
 
