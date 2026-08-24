@@ -15,12 +15,14 @@ No cartório onde trabalhei, grande parte dos processos possui prazos contados e
 
 ## Como executar
 
+### Opção 1 — Executável pronto (Windows)
+Baixe o `.exe` mais recente na aba [Releases](https://github.com/DanielAmaranteDev/Calculadora-de-datas/releases) e dê dois cliques. Não precisa instalar Python nem dependências.
+
+### Opção 2 — Rodando o código-fonte
 ```bash
-python calculadora_de_dias.py
+pip install -r requirements.txt
+python contador-de-dias.py
 ```
-
-Requer apenas Python 3 — usa somente bibliotecas padrão (`datetime` e `time`), sem necessidade de instalar nada.
-
 ## Exemplo de uso
 
 ```
