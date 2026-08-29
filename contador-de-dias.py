@@ -3,8 +3,25 @@ from babel.dates import format_date
 from time import sleep
 
 sleep(1)
-print('CALCULADORA DE DIAS')
-print('Calcula dias futuros ou passados com base na data atual')
+print("\033[92m")
+print(r"""
+╔══════════════════════════════════════════════════════════╗
+║                                                          ║
+║              ██████╗ ██████╗  █████╗                     ║
+║             ██╔════╝██╔═══██╗██╔══██╗                    ║
+║             ██║     ██║   ██║███████║                    ║
+║             ██║     ██║   ██║██╔══██║                    ║
+║             ╚██████╗╚██████╔╝██║  ██║                    ║
+║              ╚═════╝ ╚═════╝ ╚═╝  ╚═╝                    ║
+║                                                          ║
+║                 CALCULADORA DE DIAS                     ║
+║                                                          ║
+║   Calcula dias futuros ou passados                       ║
+║   com base na data atual.                                ║
+║                                                          ║
+╚══════════════════════════════════════════════════════════╝
+""")
+print("\033[0m")
 sleep(1)
 
 hoje = date.today()
@@ -26,9 +43,9 @@ while True:
         futuro = hoje + timedelta(days=quantos)
         dia_da_semana_futuro = format_date(futuro, format="EEEE", locale='pt_BR')
 
-
+        sleep(1)
         print('calculando...')
-        sleep(2)
+        sleep(1)
         print(
             f'Hoje é {hoje.strftime("%d/%m/%Y")} '
             f'e daqui a {quantos} dias será {futuro.strftime("%d/%m/%Y")} - {dia_da_semana_futuro}.'
@@ -46,7 +63,7 @@ while True:
 
         
         print('calculando...')
-        sleep(2)
+        sleep(1)
         print(
             f'Hoje é {hoje.strftime("%d/%m/%Y")} '
             f'e {quantos} dias atrás foi {passado.strftime("%d/%m/%Y")} - {dia_da_semana_passado}.'
